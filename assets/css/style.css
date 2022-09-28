@@ -1,0 +1,162 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body{
+  background-color: black;
+}
+
+/*.bg{
+  z-index: -1000;
+  animation-delay: 8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}*/
+
+.title {
+  font-family: 'Arvo', serif;
+  letter-spacing: 5px;
+  user-select: none;
+  margin-top: 12%;
+  text-align: center;
+  font-size: 110px;
+  color: white;
+
+  /* background: repeating-linear-gradient(-45deg, black 0%, yellow 7.14%,
+  black 28.56%, red 35.7%, magenta 42.84%, red 50%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: slide 10s linear infinite forwards;
+}
+@keyframes slide {
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 600vw;
+  }*/
+}
+
+h1 strong{
+  color: orangered;
+}
+
+.song a {
+  text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Arvo', serif;
+  margin: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+.song a:hover {
+  font-family: 'Arvo', serif;
+  color: lightgray;
+  transform: scale(1.1);
+  font-size: 20px;
+}
+
+.emoji {
+  user-select: none;
+  font-size: 30px;
+  text-align: center;
+  animation-delay: 6s;
+  box-sizing: border-box;
+}
+
+.socials {
+  border: 6px black;
+  margin-top: 2%;
+}
+
+.socials ul {
+  list-style: none;
+  text-align: center;
+}
+
+.socials ul li {
+  display: inline-block;
+}
+
+.socials ul li a {
+  color: whitesmoke;
+  font-size: 45px;
+  padding: 10px 5px;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+.socials ul li a:hover {
+  color: grey;
+}
+
+.current{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: white;
+  font-family: 'Arvo', sans-serif;
+  text-align: center;
+}
+
+.current strong{
+  color: orangered;
+}
+
+#container-charge{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 10000;
+}
+
+#charge{
+ border: 5px solid;
+ height: 100px;
+ width: 100px;
+ color: #3498db;
+ border-top-color: transparent;
+ border-radius: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ margin: auto;
+ animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+25%{
+        color: #2ecc71;
+    }
+    50%{
+        color: #f1c40f;
+    }
+    75%{
+        color: #e74c3c;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 800px){
+  body{
+   height: 1000px;
+}
